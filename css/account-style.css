@@ -1,6 +1,6 @@
-@import "../css/style.css";
-@import "../css/account-form.css";
-@import "../css/account-noties.css";
+@import "style.css";
+@import "account-form.css";
+@import "account-noties.css";
 
 
 .account {
