@@ -1,36 +1,5 @@
 @import "../css/style.css";
 
-/* .direction-container::before {
-    opacity: 0;
-    content: '';
-    position: absolute;
-    top: -4px;
-    left: -4px;
-    z-index: -1;
-    border-radius: 24px;
-    width: calc(100% + 8px);
-    height: calc(100% + 8px);
-	--angle: 0turn;
-    filter: blur(3px);
-	background-image: repeating-conic-gradient(from var(--angle), var(--bg-color-2) 50%, var(--ac-color-3) 100%);
-	animation: 10s border-rotate linear infinite forwards paused;
-    transition: opacity 500ms;
-}
-.direction-container:hover::before {
-    opacity: 1;
-    animation-play-state: running;
-}
-@keyframes border-rotate {
-	to {
-		--angle: 1turn;
-	}
-}
-@property --angle {
-    syntax: '<angle>';
-    initial-value: 1turn;
-    inherits: false;
-} */
-
 .direction-container {
     display: grid;
     grid-template-rows: auto 1fr;
