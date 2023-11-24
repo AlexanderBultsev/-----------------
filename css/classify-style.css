@@ -1,0 +1,26 @@
+@import "../css/style.css";
+
+.classify-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.classify-desc {
+    display: none;
+}
+
+.classify-current {
+    transform-origin: 50% 50%;
+    animation: show var(--duration-2) forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

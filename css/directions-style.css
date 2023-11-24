@@ -1,0 +1,123 @@
+@import "../css/style.css";
+
+/* .direction-container::before {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    z-index: -1;
+    border-radius: 24px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+	--angle: 0turn;
+    filter: blur(3px);
+	background-image: repeating-conic-gradient(from var(--angle), var(--bg-color-2) 50%, var(--ac-color-3) 100%);
+	animation: 10s border-rotate linear infinite forwards paused;
+    transition: opacity 500ms;
+}
+.direction-container:hover::before {
+    opacity: 1;
+    animation-play-state: running;
+}
+@keyframes border-rotate {
+	to {
+		--angle: 1turn;
+	}
+}
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 1turn;
+    inherits: false;
+} */
+
+.direction-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.direction-title {
+    grid-column: span 2;
+}
+
+.direction-desc, .direction-subdesc {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.direction-desc:hover .direction-img, .direction-subdesc:hover .direction-img {
+    transform: scale(103%);
+}
+
+.direction-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: var(--shadow), var(--shadow) inset;
+    transition: all var(--duration-3) ease;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.direction-text {
+    padding: 0 1em;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-radius: 20px;
+    background-color: var(--color-2);
+    box-shadow: var(--shadow);
+    position: absolute;
+    z-index: -1;
+}
+
+.direction-desc.moved {
+    z-index: 0;
+
+    .direction-img {
+        transform: translateX(102%);
+        opacity: 0;
+    }
+}
+
+.direction-desc.removed {
+    z-index: 0;
+}
+
+.direction-subdesc.moved {
+    z-index: 0;
+    
+    .direction-img {
+        transform: translateX(-102%);
+        opacity: 0;
+    }
+}
+
+.direction-subdesc.removed {
+    z-index: 0;
+}
+
+@media (max-width: 1000px) {
+    
+    .direction-container {
+        grid-template-rows: auto 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .direction-title {
+        grid-column: span 1;
+    }
+    
+    .direction-desc.moved .direction-img {
+        transform: translateY(102%);
+    }
+    
+    .direction-subdesc.moved .direction-img {
+        transform: translateY(-102%);
+    }
+}
+

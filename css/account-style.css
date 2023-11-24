@@ -1,0 +1,78 @@
+@import "../css/style.css";
+@import "../css/account-form.css";
+@import "../css/account-noties.css";
+
+
+.account {
+    --photo-wh: 200px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: var(--photo-wh) 1fr min-content;
+    grid-template-rows: min-content 1fr;
+}
+.account-img {
+    grid-area: 1 / 1 / span 2;
+    overflow: hidden;
+    height: var(--photo-wh);
+    width: var(--photo-wh);
+}
+.account-name {
+    grid-area: 1 / 2;
+}
+.account-stasus {
+    grid-area: 2 / 2;
+}
+
+
+#noties-button {
+    align-self: start;
+    justify-self: end;
+    position: relative;
+}
+#noties-button img {
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+#login-button {
+    grid-area: 2 / 3;
+    justify-self: end;
+    align-self: end;
+    position: relative;
+}
+
+
+.new-post form {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: min-content min-content;
+}
+
+.new-post form textarea {
+    grid-area: 1 / 1 / auto / span 2;
+    width: 100%;
+    height: 200px;
+    resize: none;
+    padding: 0;
+    margin: 0;
+    border-width: 2px;
+    border-color: var(--color-3);
+    border-radius: 4px;
+}
+.new-post form textarea:focus {
+    box-shadow: 0 0 5px black;
+}
+.new-post form textarea::placeholder {
+    color: #808080;
+    opacity: 0.2;
+}
+
+.new-post form input[type=file] {
+    width: 100%;
+}
+
+.new-post form input[type=file]::file-selector-button {
+    display: none;
+}

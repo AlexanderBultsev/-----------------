@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Пешеходный туризм</title>
+        <link rel="icon" href="../images/main/shortcut_icon_mountain.svg"> <!--Фавикон-->
+        <link rel="stylesheet" href="../css/index-style.css"> <!--Основной scc-->
+    </head>
+    <body>
+        <header> <!--Хедер-->
+            <nav> <!--Навигация-->
+                <img class="header-logo" src="../images/main/shortcut_icon_mountain.svg">
+                <input id="menu-toggle" type="checkbox">
+                <label class="menu-button-container" for="menu-toggle">
+                    <div class="button menu-button">Меню</div>
+                </label>
+                <ul class="menu">
+                    <li><a class="button pressed" href="#top">Главная</a></li>
+                    <li><a class="button" href="../html/directions.html">Направления</a></li>
+                    <li><a class="button" href="../html/classify.html">Классификация</a></li>
+                    <li><a class="button" href="../html/gallery.html">Галерея</a></li>
+                    <li><a class="button" href="../html/equipment.html">Снаряжение</a></li>
+                    <li><a class="button" href="../html/accuont.html">Аккаунт</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="left-bar">
+        </div>
+
+        <main>
+            <section>
+                <h1>Корзина</h1>
+                <div id="basket" class="catalog">
+                        <div class="buttons-container">
+                            <button id="order" class="button">Купить</button>
+                            <button id="filter" class="button">Фильтровать</button>
+                            <button id="sort" class="button">Сортировать</button>
+                            <button id="clear" class="button">Очистить</button>
+                        </div>
+                    </div>
+            </section>
+
+            <section>
+                <h1>Каталог</h1>
+                <div id="catalog" class="catalog">
+                    <div class="product" id="11">
+                        <img id="img11" src="../images/main/gallery-icon.png">
+                        <div class="buttons-container">
+                            <button id="remove11" class="button remove">-</button>
+                            <button id="count11" class="button count pressed">0</button>
+                            <button id="add11" class="button add">Купить</button>
+                        </div>
+                    </div>
+                    <div class="product" id="22">
+                        <img id="img22" src="../images/main/about_icon.png">
+                        <div class="buttons-container">
+                            <button id="remove22" class="button remove">-</button>
+                            <button id="count22" class="button count pressed">0</button>
+                            <button id="add22" class="button add">Купить</button>
+                        </div>
+                    </div>
+                    <div class="product" id="33">
+                        <img id="img33" src="../images/main/home-icon.png">
+                        <div class="buttons-container">
+                            <button id="remove33" class="button remove">-</button>
+                            <button id="count33" class="button count pressed">0</button>
+                            <button id="add33" class="button add">Купить</button>
+                        </div>
+                    </div>
+                    <div class="product" id="44">
+                        <img id="img44" src="../images/main/directions-icon.png">
+                        <div class="buttons-container">
+                            <button id="remove44" class="button remove">-</button>
+                            <button id="count44" class="button count pressed">0</button>
+                            <button id="add44" class="button add">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="right-bar">
+        </div>
+
+        <footer>
+            <div class="footer-list">
+                <a href="../html/home.html#about"><div class="button footer-button"><img class="footer-icon" src="../images/main/about_icon.png"></div>О нас</a>
+                <a><div class="button footer-button"><img class="footer-icon" src="../images/main/faq-icon.png"></div>FAQ</a>
+                <a><div class="button footer-button"><img class="footer-icon" src="../images/main/privacy_policy_icon.png"></div>Политика конфиденциальности</a>
+                <a><div class="button footer-button"><img class="footer-icon" src="../images/main/terms_and_conditions_icon.png"></div>Условия и положения</a>
+            </div>
+            <div class="footer-list">
+                <a href="../html/home.html#top"><div class="button footer-button"><img class="footer-icon" src="../images/main/about_icon.png"></div>Главная</a>
+                <a href="../html/directions.html"><div class="button footer-button"><img class="footer-icon" src="../images/main/faq-icon.png"></div>Направления</a>
+                <a href="../html/classify.html"><div class="button footer-button"><img class="footer-icon" src="../images/main/privacy_policy_icon.png"></div>Классификация</a>
+                <a href="../html/gallery.html"><div class="button footer-button"><img class="footer-icon" src="../images/main/terms_and_conditions_icon.png"></div>Галерея</a>
+                <a href="../html/accuont.html"><div class="button footer-button"><img class="footer-icon" src="../images/main/terms_and_conditions_icon.png"></div>Аккаунт</a>
+            </div>
+            <div class="footer-list">
+                <a><div class="button footer-button"><img class="footer-icon" src="../images/main/map_icon.png"></div>Россия, Москва, Битцевский парк</a>
+                <a href="tel:89167873625"><div class="button footer-button"><img class="footer-icon" src="../images/main/cell_icon.png"></div>+7 (916) 787-36-25</a>
+                <a href="https://t.me/KylePristine"><div class="button footer-button"><img class="footer-icon" src="../images/main/telegram_icon.png"></div>@KylePristine</a>
+                <a href="mailto:hikimsc@gmail.com"><div class="button footer-button"><img  class="footer-icon" src="../images/main/email_icon.png"></div>hikimsc@gmail.com</a>
+            </div>
+        </footer>
+
+        <script src="../js/index.js"></script>
+    </body>
+</html>
