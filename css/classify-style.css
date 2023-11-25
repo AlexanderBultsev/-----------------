@@ -1,5 +1,17 @@
 @import "style.css";
 
+.classify-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.classify-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
 .classify-list {
     display: flex;
     flex-direction: row;

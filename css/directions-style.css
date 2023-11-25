@@ -25,7 +25,7 @@
 .direction-img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: var(--shadow), var(--shadow) inset;
+    box-shadow: var(--shadow);
     transition: all var(--duration-3) ease;
     transform: translateX(0);
     opacity: 1;
