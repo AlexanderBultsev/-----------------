@@ -1,7 +1,8 @@
-const likeBtns = document.querySelectorAll('.like-icon');
-for (let i = 0; i < likeBtns.length; i++) {
-    likeBtns[i].addEventListener("click", () => {
-        likeBtns[i].classList.toggle('liked');
-        }
-    )
-}
+let posts = document.querySelectorAll(".post")
+
+posts.forEach((post) => {
+    let likeBtn = post.querySelector(".like-icon")
+    likeBtn.addEventListener("click", e => {
+        likeBtn.classList.toggle('liked')
+    })
+})

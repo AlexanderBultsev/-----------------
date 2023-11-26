@@ -8,23 +8,21 @@
         <link rel="stylesheet" href="css/equipment-style.css"> <!--css снаряжения-->
     </head>
     <body>
-        <header> <!--Хедер-->
-            <nav> <!--Навигация-->
-                <img class="header-logo" src="images/main/shortcut_icon_mountain.svg">
-
-                <input id="menu-toggle" type="checkbox">
-                <label class="menu-button-container" for="menu-toggle">
-                    <div class="button menu-button">Меню</div>
-                </label>
-                <ul class="menu">
-                    <li><a class="button" href="index.html">Главная</a></li>
-                    <li><a class="button" href="directions.html">Направления</a></li>
-                    <li><a class="button" href="classify.html">Классификация</a></li>
-                    <li><a class="button pressed" href="#top">Снаряжение</a></li>
-                    <li><a class="button" href="gallery.html">Галерея</a></li>
-                    <li><a class="button" href="accuont.html">Аккаунт</a></li>
-                </ul>
+        <img class="button" id="leaves-toggle" src="images/main/leaf.svg">
+        <header>
+            <img class="header-logo" src="images/main/shortcut_icon_mountain.svg">
+            <button id="menu-button" class="button"><img class="header-menu-img" src="images/main/menu-icon.png"></button>
+            <nav>
+                <a class="button" href="index.html"><span class="header-menu-desc">Главная</span><img class="header-menu-img" src="images/main/home_icon.png"></a>
+                <a class="button" href="directions.html"><span class="header-menu-desc">Направления</span><img class="header-menu-img" src="images/main/directions_icon.png"></a>
+                <a class="button" href="classify.html"><span class="header-menu-desc">Классификация</span><img class="header-menu-img" src="images/main/classify_icon.png"></a>
+                <a class="button pressed" href="#top"><span class="header-menu-desc">Снаряжение</span><img class="header-menu-img" src="images/main/equipment_icon.png"></a>
+                <a class="button" href="gallery.html"><span class="header-menu-desc">Галерея</span><img class="header-menu-img" src="images/main/gallery_icon.png"></a>
+                <a class="button" href="accuont.html"><span class="header-menu-desc">Аккаунт</span><img class="header-menu-img" src="images/main/account_icon.png"></a>
             </nav>
+            <button id="noties-button" class="button"><img class="header-menu-img" src="images/main/noties_icon.png"></button>
+            <div class="noties">
+            </div>
         </header>
 
         <div class="left-bar">
@@ -47,7 +45,7 @@
 
             <section id="backpack" class="equipment-container">
                 <h1>Рюкзак</h1>
-                <img class="equipment-img" src="/images/equipment/backpack.png">
+                <img class="equipment-img" src="images/equipment/backpack.png">
                 <p>Выбор рюкзака для пешеходного туризма важен, чтобы обеспечить комфорт и удобство во время преодоления больших расстояний. Вот несколько важных факторов, которые следует учесть при выборе рюкзака:</p>
                 <p><b>Вместимость и объем:</b> Размер рюкзака должен соответствовать вашим потребностям. Определите, сколько вещей вы планируете взять с собой на поход, и выберите рюкзак с соответствующим объемом. Обычно рекомендуется выбирать рюкзак с объемом от 40 до 70 литров.</p>
                 <p><b>Распределение нагрузки:</b> Рюкзак должен обеспечивать равномерное распределение нагрузки на спину. Имейте в виду, что большая часть веса должна быть сосредоточена на бедрах, а не на плечах. Поэтому выбирайте рюкзак с подкладкой на пояснице и регулируемыми лямками для более точной настройки.</p>
@@ -59,7 +57,7 @@
 
             <section id="tent" class="equipment-container">
                 <h1>Палатка</h1>
-                <img class="equipment-img" src="/images/equipment/tent.png">
+                <img class="equipment-img" src="images/equipment/tent.png">
                 <p>Выбор палатки для пешеходного похода играет важную роль в обеспечении комфорта и безопасности во время ночевки. Вот что нужно учесть при выборе палатки:</p>
                 <p><b>Вместимость:</b> Определите, сколько людей будет использовать палатку. Палатки обычно имеют указанное количество спальных мест, но помните, что они могут быть узкими. Если вы собираетесь использовать палатку вдвоем, рекомендуется выбирать палатку на одно спальное место больше, чем вам нужно.</p>
                 <p><b>Вес и компактность:</b> Если вы планируете длительные походы, вес и компактность палатки становятся важными. Ищите легкие и компактные модели, которые можно легко упаковать в рюкзак. Однако помните, что более легкие палатки могут быть менее прочными и менее устойчивыми к погодным условиям.</p>
@@ -71,7 +69,7 @@
 
             <section id="bag" class="equipment-container">
                 <h1>Спальник</h1>
-                <img class="equipment-img" src="/images/equipment/bag.png">
+                <img class="equipment-img" src="images/equipment/bag.png">
                 <p>Выбор спальника для пешеходного туризма также является важным аспектом для обеспечения комфорта и тепла во время ночных привалов. Вот факторы, которые следует учесть при выборе спальника:</p>
                 <p><b>Температурный рейтинг:</b> Спальники обычно имеют указанный температурный рейтинг, который указывает на их способность обеспечивать тепло в определенных условиях. Выберите спальник с температурным рейтингом, соответствующим предполагаемым погодным условиям во время вашего похода. Если вы собираетесь путешествовать в прохладную погоду, выберите спальник с нижним температурным рейтингом.</p>
                 <p><b>Вес и компактность:</b> Если вы планируете долгие походы, вес и компактность спальника очень важны. Ищите легкие и сжимаемые модели, которые можно легко упаковать в рюкзак. Однако помните, что более легкие спальники могут быть менее теплыми и менее прочными.</p>
@@ -82,7 +80,7 @@
 
             <section id="coat" class="equipment-container">
                 <h1>Одежда</h1>
-                <img class="equipment-img" src="/images/equipment/coat.png">
+                <img class="equipment-img" src="images/equipment/coat.png">
                 <p>Подбор правильной одежды для пешеходного похода имеет большое значение, чтобы обеспечить удобство и защиту во время активного отдыха. Вот несколько рекомендаций, которые помогут вам подобрать подходящую одежду:</p>
                 <p><b>Погодные условия:</b> Учтите ожидаемую погоду во время похода. Если предполагается теплая и солнечная погода, выберите легкую и воздухопроницаемую одежду, чтобы избежать перегрева. В прохладную или дождливую погоду, выберите слоистую одежду, которая будет обеспечивать изоляцию и защиту от ветра и влаги.</p>
                 <p><b>Слоистый подход:</b> Рекомендуется носить несколько слоев одежды, чтобы можно было регулировать теплоизоляцию в соответствии с изменяющимися условиями. Основной слой должен быть воздухопроницаемым и быстросохнущим, чтобы отводить влагу от тела. Следующий слой должен обеспечивать теплоизоляцию, например, флисовая или поларфлисовая кофта. Верхний слой должен защищать от ветра и влаги, например, ветрозащитная и водонепроницаемая куртка.</p>
@@ -95,7 +93,7 @@
 
             <section id="crockery" class="equipment-container">
                 <h1>Посуда</h1>
-                <img class="equipment-img" src="/images/equipment/crockery.png">
+                <img class="equipment-img" src="images/equipment/crockery.png">
                 <p>В пешеходном походе правильный выбор посуды играет важную роль, так как она должна быть легкой, компактной и функциональной. Вот несколько рекомендаций по выбору посуды для пешего похода:</p>
                 <p><b>Котелок или сковорода:</b> Одна из основных вещей, которую нужно взять с собой, это котелок или сковорода. Они должны быть легкими и иметь небольшой объем, но в то же время достаточно вместительными для приготовления пищи. Выбирайте посуду из алюминия или титана, так как они обычно обладают легким весом и хорошей теплопроводностью.</p>
                 <p><b>Кружка или чашка:</b> Возьмите с собой легкую и прочную кружку или чашку для приема пищи и питья. Предпочтение отдавайте посуде из пластика или легкого металла, чтобы она не добавляла лишний вес в рюкзак.</p>
@@ -107,7 +105,7 @@
 
             <section id="other" class="equipment-container">
                 <h1>Другие важные предметы</h1>
-                <img class="equipment-img" src="/images/equipment/other.png">
+                <img class="equipment-img" src="images/equipment/other.png">
                 <p>Перед походом вы также должны подготовить некоторое дополнительное снаряжение для лагеря:</p>
                 <p><b>Фонарик или головной фонарь:</b> В походе может понадобиться источник света, особенно при движении в темное время суток или в пещерах. Фонарик или головной фонарь помогут вам ориентироваться и выполнять задачи в ночное время.</p>
                 <p><b>Топор и пила:</b> Выбирайте пилу и топор исходя из их функциональности и веса. Они должны быть достаточно надежными и прочными, чтобы не подвести вас на протяжении всего похода. Также убедитесь, что ни будут достаточно мащнымы для добычи дров в условиях похода.</p>
@@ -122,17 +120,18 @@
 
         <footer>
             <div class="footer-list">
+                <a href="index.html#top"><div class="button footer-button"><img class="footer-icon" src="images/main/home_icon.png"></div>Главная</a>
+                <a href="directions.html"><div class="button footer-button"><img class="footer-icon" src="images/main/directions_icon.png"></div>Направления</a>
+                <a href="classify.html"><div class="button footer-button"><img class="footer-icon" src="images/main/classify_icon.png"></div>Классификация</a>
+                <a href="equipment.html"><div class="button footer-button"><img class="footer-icon" src="images/main/equipment_icon.png"></div>Снаряжение</a>
+                <a href="gallery.html"><div class="button footer-button"><img class="footer-icon" src="images/main/gallery_icon.png"></div>Галерея</a>
+                <a href="accuont.html"><div class="button footer-button"><img class="footer-icon" src="images/main/account_icon.png"></div>Аккаунт</a>
+            </div>
+            <div class="footer-list">
                 <a href="index.html#about"><div class="button footer-button"><img class="footer-icon" src="images/main/about_icon.png"></div>О нас</a>
                 <a><div class="button footer-button"><img class="footer-icon" src="images/main/faq_icon.png"></div>FAQ</a>
                 <a><div class="button footer-button"><img class="footer-icon" src="images/main/privacy_policy_icon.png"></div>Политика конфиденциальности</a>
                 <a><div class="button footer-button"><img class="footer-icon" src="images/main/terms_and_conditions_icon.png"></div>Условия и положения</a>
-            </div>
-            <div class="footer-list">
-                <a href="index.html#top"><div class="button footer-button"><img class="footer-icon" src="images/main/home_icon.png"></div>Главная</a>
-                <a href="directions.html"><div class="button footer-button"><img class="footer-icon" src="images/main/directions_icon.png"></div>Направления</a>
-                <a href="classify.html"><div class="button footer-button"><img class="footer-icon" src="images/main/classify_icon.png"></div>Классификация</a>
-                <a href="gallery.html"><div class="button footer-button"><img class="footer-icon" src="images/main/gallery_icon.png"></div>Галерея</a>
-                <a href="accuont.html"><div class="button footer-button"><img class="footer-icon" src="images/main/account_icon.png"></div>Аккаунт</a>
             </div>
             <div class="footer-list">
                 <a><div class="button footer-button"><img class="footer-icon" src="images/main/map_icon.png"></div>Россия, Москва, Битцевский парк</a>
@@ -141,5 +140,9 @@
                 <a href="mailto:hikimsc@gmail.com"><div class="button footer-button"><img  class="footer-icon" src="images/main/email_icon.png"></div>hikimsc@gmail.com</a>
             </div>
         </footer>
+
+        <script src="js/show-menu.js"></script>
+        <script src="js/show-noties.js"></script>
+        <script src="js/leaf-trace.js"></script>
     </body>
 </html>
