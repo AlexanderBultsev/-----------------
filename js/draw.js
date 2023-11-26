@@ -19,7 +19,7 @@ body.addEventListener('mousemove', e => {
     if (isDrawing) {
         const newImg = document.createElement('img')
         newImg.id = "newImg"
-        newImg.src = '../images/main/shortcut_icon_mountain.svg'
+        newImg.src = '/images/main/shortcut_icon_mountain.svg'
         newImg.style.height = '22px'
         newImg.style.width = '54px'
         newImg.style.position = 'absolute'
