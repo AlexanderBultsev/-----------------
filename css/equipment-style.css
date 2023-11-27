@@ -4,7 +4,9 @@
     --icon-wh: 100px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
+    gap: 10px;
 }
 
 .equipment-menu-img {

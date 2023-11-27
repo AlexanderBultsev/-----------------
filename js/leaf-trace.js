@@ -14,7 +14,7 @@ function ableTrace() {
         if (moved) {
             leafTrace(mouseX, mouseY)
         }
-    }, 100)
+    }, 200)
 }
 
 function disableTrace() {
