@@ -6,7 +6,7 @@
 .account {
     --photo-wh: 200px;
     display: grid;
-    gap: 20px;
+    gap: 10px;
     grid-template-columns: var(--photo-wh) 1fr min-content;
     grid-template-rows: min-content 1fr;
 }
@@ -23,18 +23,6 @@
     grid-area: 2 / 2;
 }
 
-
-#noties-button {
-    align-self: start;
-    justify-self: end;
-    position: relative;
-}
-#noties-button img {
-    display: block;
-    height: 30px;
-    width: 30px;
-}
-
 #login-button {
     grid-area: 2 / 3;
     justify-self: end;
@@ -45,15 +33,45 @@
 
 .new-post form {
     display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr min-content;
-    grid-template-rows: min-content min-content;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr min-content;
 }
 
-.new-post form textarea {
-    grid-area: 1 / 1 / auto / span 2;
+.new-post .photo {
+    padding: 0;
+    border-radius: 20px;
+    grid-area: 1 / 1 / span 2;
+}
+
+.new-post  input[type=file] {
+    display: none;
+}
+
+.new-post .photo div {
+    position: relative;
     width: 100%;
-    height: 200px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-size: 100% 100%;
+}
+.new-post .photo img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+.new-post textarea {
+    grid-area: 1 / 2;
+    width: 100%;
+    height: 100%;
     resize: none;
     padding: 0;
     margin: 0;
@@ -61,18 +79,52 @@
     border-color: var(--color-3);
     border-radius: 4px;
 }
-.new-post form textarea:focus {
+.new-post textarea:focus {
     box-shadow: 0 0 5px black;
 }
-.new-post form textarea::placeholder {
+.new-post textarea::placeholder {
     color: #808080;
     opacity: 0.2;
 }
 
-.new-post form input[type=file] {
-    width: 100%;
+.new-post #post-button {
+    grid-area: 2 / 2;
+    justify-self: end;
+    align-self: end;
+    position: relative;
 }
 
-.new-post form input[type=file]::file-selector-button {
-    display: none;
+@media (max-width: 620px) {
+    .account {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, min-content);
+    }
+    .account-img {
+        grid-area: 2 / 1;
+    }
+    .account-name {
+        grid-area: 1 / 1;
+    }
+    .account-stasus {
+        grid-area: 3 / 1;
+    }
+    #login-button {
+        grid-area: 4 / 1;
+        justify-self: center;
+    }
+
+    .new-post form {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content);
+    }
+    .new-post .photo {
+        grid-area: 1 / 1;
+    }
+    .new-post textarea {
+        grid-area: 2 / 1;
+    }
+    .new-post #post-button {
+        grid-area: 3 / 1;
+        justify-self: center;
+    }
 }

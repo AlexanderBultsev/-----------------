@@ -3,6 +3,7 @@ let directions = document.querySelectorAll(".direction-container")
 directions.forEach((direction) => {
     let desc = direction.querySelector(".direction-desc")
     let subdesc = direction.querySelector(".direction-subdesc")
+
     desc.addEventListener("click", () => {
         if (desc.classList.contains("moved")) {
             desc.classList.add("removed")
@@ -19,6 +20,7 @@ directions.forEach((direction) => {
             desc.classList.add("moved")
         }
     })
+    
     subdesc.addEventListener("click", () => {
         if (subdesc.classList.contains("moved")) {
             subdesc.classList.add("removed")

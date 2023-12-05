@@ -39,18 +39,18 @@
                     <p>Я был и останусь преподавателем-подполковником в отставке, понятно!?</p>
                 </div>
 
-
-                
-
                 <button id="login-button" class="button">Вход</button>
             </section>
 
             <section class="new-post">
                 <h1>Создать новый пост</h1>
                 <form id="post-form" method="post" action="">
-                    <textarea id="post-desc" placeholder="Добавьте описание"></textarea>
-                    <input id="post-photo" class="button" type="file" accept="image/png, image/jpeg" required>
-                    <button class="button" id="post-submit" type="submit">Опубликовать</button>
+                    <label class="button photo">
+                        <input id="photo" type="file" accept="image/png, image/jpeg" required>
+                        <div><img src="images/account/image-icon.png">Выберите фото</div>
+                    </label>
+                    <textarea id="desc" placeholder="Добавьте описание"></textarea>
+                    <button class="button" id="post-button" type="submit">Опубликовать</button>
                 </form>
             </section>
 
@@ -92,5 +92,6 @@
         <script src="js/show-noties.js"></script>
         <script src="js/leaf-trace.js"></script>
         <script src="js/generate-login-reg-form.js"></script>
+        <script src="js/account-post.js"></script>
     </body>
 </html>
