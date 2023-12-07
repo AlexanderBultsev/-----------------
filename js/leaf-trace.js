@@ -98,10 +98,10 @@ leavesToggle.addEventListener("click", e => {
     }
 })
 
-window.addEventListener("DOMContentLoaded", e => {
-    leavesToggle.classList.add("pressed")
-    ableTrace(200)
-})
+// window.addEventListener("DOMContentLoaded", e => {
+//     leavesToggle.classList.add("pressed")
+//     ableTrace()
+// })
 
 window.addEventListener("mousemove", e => {
     moved = true
