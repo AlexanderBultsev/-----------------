@@ -9,7 +9,7 @@
     display: hidden;
     border-width: 0;
     background: none;
-    backdrop-filter: brightness(70%) blur(2px);
+    backdrop-filter: brightness(70%) blur(8px);
 }
 
 .form {
